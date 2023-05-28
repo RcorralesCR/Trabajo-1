@@ -1,0 +1,46 @@
+/*
+Estilos de formatos
+*/
+
+          h2{
+                background-color: blue;
+                color: white;
+            }
+          h3{
+                text-align: center;
+                background-color: gray;
+                color: white;
+            }
+          footer{
+                 text-align: center;
+                background-color: blue;
+                color: white;
+                
+            }
+         a{
+                text-decoration: none;
+                background-color: green;
+                color: white;
+         }
+         
+         a:hover{
+           background-color: black;
+           color: white;
+         } 
+         /*para utilizar un id*/
+         #alerta{
+           background-color: yellowgreen;
+           color: red;
+         }
+         /*para esto se utiliza class*/
+         .aviso{
+           background-color: brown;
+           color: white;
+         }
+         
+         p span{
+           background-color: black;
+           color: white;
+         }
+
+ 
