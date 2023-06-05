@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>One Piece - Detalles del episodio</title>
+        <title style="color:white">Creador</title>
+        <meta charset="UTF-8">
+        <link href="css/carrusel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>Detalles del episodio</h1>
-        <h2>Episodio 1</h2>
-        <p>En el episodio 1, Luffy zarpa en su aventura en busca del legendario tesoro, el One Piece.</p>
+        <header class="header">
+            <nav class="nav">
+                <figure>
+                    <img src="https://i.pinimg.com/originals/bf/c6/8b/bfc68b8ac88ba34eac665bdbf1d56207.jpg" 
+                         alt="50" width="80" class="logo-img"/>
+                </figure>
+                <a href="index.html" class="logo nav-link">One Piece</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Uno.html">Personajes</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Dos.html">Creador</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Tres.html">Arcos</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Cinco.html">Industrias</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Cuatro.html">Referencia</a></li>
+                </ul>
+            </nav>
+        </header>>
+
+        <aside> <!-- Barra lateral -no visual- solo info -->
+            <div>
+                <h1 style="text-align: center;background-color: black;color: white">Sitios de interes</h1>
+
+                <label style="color: white" for="sitios-web">Sitios webs para ver One Piece:</label>
+                <select id="sitios-web" onchange="redirectToPage()">
+                    <option value="">Más opciones</option>
+                    <option value="https://jkanime.net/one-piece/">JKAnime</option>
+                    <option value="https://www3.animeflv.net/anime/one-piece-tv">AnimeFlv</option>
+                    <option value="https://www.crunchyroll.com/es/series/GRMG8ZQZR/one-piece">Crunchyroll</option>
+                </select>
+
+                <script>
+                    function redirectToPage() {
+                        var selectElement = document.getElementById("sitios-web");
+                        var selectedOption = selectElement.options[selectElement.selectedIndex];
+                        var url = selectedOption.value;
+
+                        if (url) {
+                            window.location.href = url;
+                        }
+                    }
+                </script>
+                <article>
+                    <figure>
+                        <img src="https://4.bp.blogspot.com/-D0q9ovuGAK0/V6TVrAvAehI/AAAAAAAAAkU/im08Vf7E56AVVw8fSFbPGA0MFBn_ga9tQCLcB/s1600/imagenes-de-one-piece-3.jpg" 
+                             alt="600" width="350"/>
+                    </figure>
+                </article>
+
+            </div>
+        </aside>
+        <section>
+            <hr>
+            <h2 style="color: white; margin-top: 10px; text-align: center; font-size: 40px;">Industrias Creadoras de Entretenimiento</h2>
+            <article class="aviso">
+                <p class="aviso">La industria encargada de crear y producir One Piece es la industria del entretenimiento y los 
+                    medios de comunicación japonesa, específicamente dentro del ámbito del manga y el anime. Estos son algunos 
+                    de los actores principales involucrados en la creación de One Piece:</p>
+            </article>
+            <article class="aviso">
+                <h3>1. Shueisha:</h3>
+                <p> Es una reconocida editorial japonesa que publica el manga de One Piece en la revista Weekly Shonen
+                    Jump. Shueisha tiene un papel fundamental en la publicación, promoción y distribución del manga, así como en el
+                    apoyo a Eiichiro Oda como autor y creador de la serie.</p>
+            </article>
+            <article class="aviso">
+            <h3>2. Toei Animation:</h3>
+            <p> Es un estudio de animación japonés que se encarga de la producción del anime de One Piece. 
+                Toei Animation adapta el manga de Eiichiro Oda a la animación, creando los episodios y las películas de la 
+                serie. También se encarga de la dirección artística, el diseño de personajes y la animación en sí.</p>
+            </article>
+            <article class="aviso">
+                <h3>3. Fuji Television:</h3>
+                <p> Es una importante cadena de televisión japonesa que ha emitido el anime de One Piece en Japón
+                    . Fuji TV es responsable de la transmisión y distribución de los episodios de la serie en su programación.</p>
+            </article>
+            <article class="aviso">
+                <p>Además de estos actores principales, hay otros involucrados en la producción y promoción de One Piece, como 
+                    compañías de licencias que se encargan de comercializar productos relacionados con la serie, compañías de 
+                    producción de películas, estudios de sonido para la grabación de la música, entre otros.
+                    En resumen, la industria del entretenimiento y los medios de comunicación en Japón, que incluye a editoriales, 
+                    estudios de animación, cadenas de televisión y otras empresas relacionadas, es responsable de la creación, 
+                    producción y promoción de One Piece tanto en su formato de manga como en su adaptación a anime.</p>
+
+            </article>
+            <hr>
+        </section>
+        <footer>
+            <p>Derechos Reservados &COPY; 2023</p>
+        </footer>
     </body>
 </html>

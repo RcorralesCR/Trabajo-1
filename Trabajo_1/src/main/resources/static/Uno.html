@@ -1,20 +1,369 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>One Piece - Personajes</title>
+        <title style="color:white">One Piece - Personajes</title>
+        <meta charset="UTF-8">
+        <link href="css/carrusel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>Personajes de One Piece</h1>
-        <ul>
-            <li>Luffy</li>
-            <li>Zoro</li>
-            <li>Nami</li>
-            <li>Usopp</li>
-            <li>Sanji</li>
-            <li>Chopper</li>
-            <li>Robin</li>
-            <li>Franky</li>
-            <li>Brook</li>
-        </ul>
+        <header class="header">
+            <nav class="nav">
+                <figure>
+                    <img src="https://i.pinimg.com/originals/bf/c6/8b/bfc68b8ac88ba34eac665bdbf1d56207.jpg" 
+                         alt="50" width="80" class="logo-img"/>
+                </figure>
+                <a href="index.html" class="logo nav-link">One Piece</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Uno.html">Personajes</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Dos.html">Creador</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Tres.html">Arcos</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Cinco.html">Industrias</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Cuatro.html">Referencia</a></li>
+                </ul>
+            </nav>
+        </header>>
+
+        <aside> <!-- Barra lateral -no visual- solo info -->
+            <div>
+                <h1 style="text-align: center;background-color: black;color: white">Sitios de interes</h1>
+
+                <label style="color: white" for="sitios-web">Sitios webs para ver One Piece:</label>
+                <select id="sitios-web" onchange="redirectToPage()">
+                    <option value="">Más opciones</option>
+                    <option value="https://jkanime.net/one-piece/">JKAnime</option>
+                    <option value="https://www3.animeflv.net/anime/one-piece-tv">AnimeFlv</option>
+                    <option value="https://www.crunchyroll.com/es/series/GRMG8ZQZR/one-piece">Crunchyroll</option>
+                </select>
+
+                <script>
+                    function redirectToPage() {
+                        var selectElement = document.getElementById("sitios-web");
+                        var selectedOption = selectElement.options[selectElement.selectedIndex];
+                        var url = selectedOption.value;
+
+                        if (url) {
+                            window.location.href = url;
+                        }
+                    }
+                </script>
+                <article>
+                    <figure>
+                        <img src="https://4.bp.blogspot.com/-D0q9ovuGAK0/V6TVrAvAehI/AAAAAAAAAkU/im08Vf7E56AVVw8fSFbPGA0MFBn_ga9tQCLcB/s1600/imagenes-de-one-piece-3.jpg" 
+                             alt="600" width="350"/>
+                    </figure>
+                </article>
+
+            </div>
+        </aside>
+        <section>
+            <hr>
+            <h2 style="color: white; margin-top: 10px; text-align: center">Personajes</h2>
+            <article>
+                <figure class="aviso">
+                    <img src="http://wallpapercave.com/wp/GUslo5m.jpg" 
+                         alt="600" width="350"/>
+                </figure>
+                <figcaption class="aviso" style="color:white">Mokey D. Luffy </figcaption>
+                <p class="aviso">Monkey D. Luffy es el protagonista principal del popular manga y anime "One Piece", creado por Eiichiro Oda. 
+                    Es un personaje carismático y valiente, conocido como el Capitán de los Piratas del Sombrero de Paja.
+                    Luffy es un joven pirata de cabello negro y una personalidad única. Es extremadamente apasionado, optimista 
+                    y valiente, y está dispuesto a arriesgarlo todo por sus amigos y su sueño de convertirse en el Rey de los Piratas.
+                    Su mayor deseo es encontrar el tesoro más grande del mundo, conocido como el "One Piece", y así convertirse en
+                    el próximo Rey de los Piratas, un título que una vez perteneció al legendario pirata Gol D. Roger.
+                    Luffy posee una fuerza y habilidades físicas sobrehumanas debido a su entrenamiento y su habilidad de consumir 
+                    una Fruta del Diablo llamada Gomu Gomu no Mi. Esta fruta le otorga la capacidad de estirar su cuerpo como si fuera
+                    goma, convirtiéndose en un "hombre de goma". Gracias a esto, Luffy puede lanzar puñetazos y patadas devastadoras, 
+                    además de resistir ataques físicos y el dolor de una manera impresionante.
+                    A lo largo de la historia, Luffy recluta a varios miembros en su tripulación, conocida como los Piratas del Sombrero
+                    de Paja. Juntos, se embarcan en aventuras épicas, desafiando a poderosos enemigos y explorando diferentes islas y 
+                    mares en busca del One Piece.
+                    Luffy es un personaje notable por su inocencia y su capacidad para inspirar a otros. Aunque puede ser ingenuo y a 
+                    menudo no entiende los peligros que enfrenta, su carisma y determinación le ganan el apoyo y la lealtad de sus amigos 
+                    y aliados. Además, tiene una gran capacidad para comer grandes cantidades de comida, especialmente carne, y su lema
+                    recurrente es "¡Seré el Rey de los Piratas!".
+                    En resumen, Monkey D. Luffy es un valiente y carismático joven pirata con poderes elásticos, en busca del tesoro más 
+                    grande del mundo. Su historia y sus aventuras han cautivado a una gran audiencia y lo han convertido en uno de los 
+                    personajes de anime y manga más reconocidos a nivel mundial.
+                </p>
+            </article>
+            <article>
+                <figure class="aviso">
+                    <img src="https://wallpapercave.com/wp/wp6729894.jpg" 
+                         alt="600" width="350"/>
+                </figure>
+                <figcaption class="aviso" style="color:white">Ronoroa Zoro</figcaption>                
+                <p class="aviso">Roronoa Zoro es uno de los personajes principales del manga y anime "One Piece" creado por 
+                    Eiichiro Oda. Es un espadachín hábil y valiente, conocido como el espadachín de los Piratas del Sombrero 
+                    de Paja.
+                    Zoro es reconocido por su apariencia distintiva, con su largo cabello verde y una bandana en la cabeza. 
+                    Es un hombre alto y musculoso con una expresión seria y una actitud calmada. Como miembro leal de los Piratas
+                    del Sombrero de Paja, Zoro es el espadachín principal y el segundo al mando de la tripulación, después de 
+                    Monkey D. Luffy.
+                    Zoro es un espadachín excepcionalmente talentoso y lucha utilizando un estilo de tres espadas conocido como 
+                    Santoryu. Lleva consigo tres espadas: una en cada mano y otra en su boca. A lo largo de la serie, Zoro se ha
+                    vuelto increíblemente fuerte y ha demostrado una habilidad impresionante con sus espadas. Es capaz de cortar 
+                    acero y enfrentarse a enemigos poderosos con su destreza y agilidad sobrehumanas.
+                    Además de su habilidad con la espada, Zoro también es conocido por su determinación y su código de honor samurái.
+                    Es un guerrero disciplinado y valiente que nunca se rinde, incluso en las situaciones más difíciles. Su objetivo 
+                    principal es convertirse en el espadachín más fuerte del mundo, y está dispuesto a entrenar y enfrentarse a 
+                    cualquier desafío para lograrlo.
+                    Zoro también es un personaje leal y protector. Siempre está dispuesto a sacrificarlo todo por sus amigos y compañeros
+                    de tripulación. Aunque puede parecer frío y distante en ocasiones, tiene un gran corazón y se preocupa profundamente 
+                    por aquellos a quienes considera importantes en su vida.
+                    En resumen, Roronoa Zoro es un espadachín hábil y valiente, con una actitud seria y un fuerte sentido de la 
+                    disciplina y el honor. Su habilidad con la espada y su determinación lo convierten en un miembro invaluable 
+                    de los Piratas del Sombrero de Paja. La historia de Zoro y su búsqueda por convertirse en el espadachín más 
+                    fuerte han cautivado a los fanáticos de "One Piece" en todo el mundo.</p>
+            </article>
+            <article> 
+                <figure class="aviso">
+                    <img src="https://img00.deviantart.net/82d0/i/2012/225/a/5/wallpaper_of_nami_by_gueparddefeu-d5axqyo.jpg" 
+                         alt="600" width="350"/>
+                </figure>
+                <figcaption class="aviso" style="color:white">Nami La gata ladrona</figcaption> 
+                <p class="aviso">Nami es uno de los personajes principales del manga y anime "One Piece" creado por Eiichiro Oda.
+                    Es una talentosa navegante y ladrona, además de ser la navegante de los Piratas del Sombrero de Paja.
+                    Nami es conocida por su apariencia distintiva, con cabello pelirrojo corto y una personalidad vibrante. 
+                    A lo largo de la serie, ha tenido diferentes atuendos y trajes, a menudo con ropa ajustada y una camisa de 
+                    franjas azules. También lleva un clima-tact, un dispositivo que le permite controlar el clima y predecir los 
+                    cambios meteorológicos.
+                    Nami es extremadamente inteligente y astuta, especialmente en asuntos de navegación y cartografía. Es una 
+                    experta en leer y dibujar mapas y tiene una habilidad innata para entender las corrientes y las condiciones 
+                    climáticas. Además, es una excelente estratega y tiene un sentido agudo de la observación, lo que la convierte 
+                    en una valiosa aliada en las aventuras de los Piratas del Sombrero de Paja.
+                    Aunque inicialmente se presenta como una ladrona egoísta y manipuladora, Nami se une a los Piratas del Sombrero
+                    de Paja después de que Luffy le ayuda a liberarse de una situación difícil. A partir de ese momento, se convierte 
+                    en un miembro leal de la tripulación y se preocupa profundamente por sus compañeros.
+                    Además de sus habilidades como navegante, Nami también es una talentosa luchadora. Utiliza un bastón llamado 
+                    Clima-Tact para canalizar su dominio del clima y crear ataques devastadores, como rayos y vientos poderosos. 
+                    Aunque no tiene poderes sobrehumanos como algunos de sus compañeros de tripulación, su inteligencia y destreza 
+                    en combate le permiten enfrentarse a enemigos poderosos.
+                    Nami es conocida por su naturaleza pragmática y su objetivo principal de recolectar dinero para cumplir su sueño 
+                    de cartografiar el mundo. Aunque valora el dinero, también tiene un gran corazón y se preocupa profundamente por 
+                    las personas que le importan. A menudo se preocupa por la seguridad y el bienestar de sus compañeros de tripulación,
+                    y su habilidad para leer las emociones de los demás la convierte en una figura importante para el equilibrio emocional
+                    del grupo.
+                    En resumen, Nami es una navegante talentosa y luchadora valiente, conocida por su inteligencia y astucia. Su papel 
+                    esencial en los Piratas del Sombrero de Paja y su carácter apasionado la han convertido en uno de los personajes más 
+                    queridos de "One Piece".</p>
+            </article>
+            <article>  
+                <figure class="aviso">
+                    <img src="https://wallpaperaccess.com/full/2841103.jpg" 
+                         alt="600" width="350"/>
+                </figure>
+                <figcaption class="aviso" style="color:white">Usopp Sogeking</figcaption> 
+                <p class="aviso">Usopp, también conocido como "Sogeking" en ciertas ocasiones, es un personaje principal del manga
+                    y anime "One Piece" creado por Eiichiro Oda. Es un tirador habilidoso y un experto en la fabricación de armas, 
+                    así como un miembro de los Piratas del Sombrero de Paja.
+                    Usopp es reconocido por su apariencia distintiva, con cabello despeinado y una nariz prominentemente larga. 
+                    Suele llevar una camisa de rayas y un sombrero de paja en honor a su tripulación. A lo largo de la serie, ha 
+                    mostrado varios atuendos y disfraces, especialmente cuando adopta su alter ego de Sogeking.
+                    Usopp tiene una personalidad extrovertida y bromista. Es conocido por ser un gran contador de historias y a 
+                    menudo exagera o inventa situaciones para impresionar a los demás. Aunque al principio puede parecer cobarde 
+                    e inseguro, su valentía y determinación se ponen de manifiesto en momentos cruciales.
+                    Usopp es un tirador excepcionalmente hábil y experto en el uso de armas de largo alcance, como su icónica 
+                    resortera. Tiene una precisión asombrosa y puede golpear objetivos con gran habilidad. Además, es un ingeniero
+                    talentoso y ha creado varias armas y dispositivos útiles para ayudar a su tripulación en sus aventuras.
+                    A pesar de sus habilidades como tirador, Usopp a menudo se encuentra en situaciones peligrosas debido a su falta
+                    de confianza en sí mismo. Sin embargo, a medida que avanza la historia, va desarrollando una mayor determinación 
+                    y coraje, superando sus miedos para proteger a sus amigos y luchar por lo que cree.
+                    Usopp también es conocido por su lealtad hacia sus compañeros de tripulación y su habilidad para inspirar a otros. 
+                    A pesar de sus exageraciones y bromas, se preocupa profundamente por el bienestar de sus amigos y está dispuesto a 
+                    arriesgar su vida por ellos. Su amistad con Luffy y los demás miembros de la tripulación es una parte central de 
+                    su historia y desarrollo como personaje.
+                    En resumen, Usopp es un tirador habilidoso y un experto fabricante de armas con una personalidad extrovertida 
+                    y bromista. Aunque inicialmente puede parecer cobarde, demuestra valentía y determinación en momentos clave. 
+                    Su papel en los Piratas del Sombrero de Paja y su evolución como personaje lo convierten en un miembro querido
+                    de la tripulación y en una parte integral de la historia de "One Piece".</p>
+            </article>
+            <article> 
+                <figure class="aviso">
+                    <img src="https://wallpaperaccess.com/full/4594229.jpg" 
+                         alt="600" width="350"/>
+                </figure>
+                <figcaption class="aviso" style="color:white">Sanji Black Leg Sanji</figcaption> 
+                <p class="aviso">Sanji, también conocido como "Black Leg Sanji", es uno de los personajes principales del manga y 
+                    anime "One Piece" creado por Eiichiro Oda. Es un talentoso cocinero y luchador, así como un miembro clave de 
+                    los Piratas del Sombrero de Paja.
+                    Sanji es reconocido por su apariencia distintiva y elegante. Tiene cabello rubio y usa un traje negro con una 
+                    camisa blanca y una corbata roja. Lleva una ceja rizada y siempre tiene un cigarrillo en la boca, aunque no 
+                    fuma de verdad. Además, Sanji es famoso por su habilidad de lucha utilizando principalmente sus piernas, lo 
+                    que le ha dado el apodo de "Black Leg".
+                    Sanji es un caballero apasionado y un romántico empedernido. Es conocido por su galantería hacia las mujeres,
+                    a quienes trata con respeto y cortesía, y siempre se ofrece a protegerlas en cualquier situación. Sin embargo,
+                    también tiene una actitud conflictiva hacia los enfrentamientos físicos con las mujeres y se niega a golpearlas,
+                    incluso si son enemigas.
+                    Además de su habilidad en la lucha, Sanji es un talentoso cocinero y se le considera uno de los mejores chefs del
+                    mundo de "One Piece". Especializado en la cocina francesa, Sanji puede preparar platos exquisitos y su habilidad 
+                    para crear menús deliciosos es apreciada por su tripulación.
+                    Sanji también es conocido por su habilidad para utilizar el "Haki", una energía espiritual que le permite detectar 
+                    la presencia de otros y fortalecer sus ataques. Con su técnica de lucha principal, "Diable Jambe" (Pierna del Diablo),
+                    Sanji puede prender fuego a su pierna girando rápidamente y realizar patadas ardientes y poderosas.
+                    A lo largo de la serie, Sanji se enfrenta a desafíos personales y debe lidiar con su pasado y su familia. A pesar 
+                    de esto, su lealtad hacia su tripulación y su deseo de proteger a sus amigos son valores fundamentales en su 
+                    carácter.
+                    En resumen, Sanji es un cocinero talentoso y luchador habilidoso con una personalidad galante y romántica. Su 
+                    estilo de lucha con las piernas y su dominio de la cocina lo convierten en un miembro invaluable de los Piratas
+                    del Sombrero de Paja. Su papel en la historia de "One Piece" y sus interacciones con los demás personajes lo 
+                    han convertido en uno de los favoritos de los fanáticos.</p>
+            </article>
+            <article> 
+                <figure class="aviso">
+                    <img src="http://wallpapercave.com/wp/wp1973985.jpg" 
+                         alt="600" width="350"/>
+                </figure>
+                <figcaption class="aviso" style="color:white">Tony Tony Chopper</figcaption> 
+                <p class="aviso">Tony Tony Chopper es un personaje del manga y anime "One Piece" creado por Eiichiro Oda. Es un 
+                    reno antropomórfico que se convierte en un miembro de los Piratas del Sombrero de Paja y en el médico del 
+                    barco.
+                    Chopper es conocido por su apariencia adorable y su personalidad inocente. Tiene un pelaje azul y su 
+                    característica distintiva es su sombrero de paja, que siempre lleva puesto. Aunque es un reno, tiene la 
+                    habilidad de consumir una Fruta del Diablo llamada "Hito Hito no Mi", lo que le permite adquirir una forma 
+                    humana.
+                    Chopper tiene la capacidad de cambiar de forma entre su forma de reno y su forma humanoide. En su forma 
+                    humanoide, es un pequeño niño con características renos, como cuernos y pezuñas. Su forma híbrida, llamada 
+                    "Monster Point", es una forma gigante y poderosa que solo puede usar bajo ciertas circunstancias extremas.
+                    Además de su transformación física, Chopper es un médico talentoso. Aprendió medicina de su mentor, el 
+                    Dr. Hiluluk, y ha desarrollado habilidades curativas excepcionales. Tiene un conocimiento profundo de hierbas 
+                    medicinales y remedios, y utiliza sus habilidades para sanar y tratar a su tripulación y otros personajes en 
+                    la serie.
+                    Chopper es extremadamente leal y se preocupa profundamente por sus amigos. Aunque es tímido y a menudo duda 
+                    de sí mismo, siempre está dispuesto a ponerse en peligro para proteger a sus compañeros. Su personalidad 
+                    amable y su actitud protectora lo convierten en un personaje querido por los fanáticos de "One Piece".
+                    A medida que avanza la historia, Chopper se enfrenta a desafíos personales y desarrolla una mayor confianza 
+                    en sí mismo. Aprende a superar sus miedos y a utilizar su fuerza y habilidades para ayudar a los demás, 
+                    convirtiéndose en un valioso miembro de los Piratas del Sombrero de Paja.
+                    En resumen, Tony Tony Chopper es un reno antropomórfico y médico talentoso con una personalidad adorable y 
+                    amable. Su transformación entre su forma de reno y humanoide, junto con sus habilidades médicas, lo hacen 
+                    único dentro de la tripulación de los Piratas del Sombrero de Paja. Su historia de superación personal y su 
+                    dedicación a sus amigos lo han convertido en un personaje querido en el mundo de "One Piece".</p>
+            </article>
+            <article> 
+                <figure class="aviso">
+                    <img src="https://wallpapercave.com/wp/wp3853224.jpg" 
+                         alt="600" width="350"/>
+                </figure>
+                <figcaption class="aviso" style="color:white">Nico Robin</figcaption> 
+                <p class="aviso">Robin, cuyo nombre completo es Nico Robin, es un personaje principal del manga y anime "One Piece"
+                    creado por Eiichiro Oda. Es una arqueóloga talentosa y una antigua asesina, y se convierte en una miembro 
+                    invaluable de los Piratas del Sombrero de Paja.
+                    Robin es conocida por su apariencia distintiva y su mirada seria. Tiene el pelo largo y oscuro que cae sobre 
+                    su espalda y suele llevar gafas. Viste una variedad de atuendos, a menudo con colores oscuros y una chaqueta 
+                    característica con una calavera y huesos cruzados en la espalda.
+                    Robin es una persona tranquila y reservada, con una mente analítica y un intelecto brillante. Es una 
+                    arqueóloga experta y ha adquirido un vasto conocimiento sobre la historia antigua y los pone en práctica en 
+                    sus aventuras. Su habilidad para descifrar poneglyphs, unas antiguas inscripciones de piedra, es fundamental 
+                    para la búsqueda del "One Piece".
+                    Además de su conocimiento académico, Robin es una luchadora habilidosa. Utiliza un estilo de lucha llamado 
+                    "Hana Hana no Mi", que le permite generar múltiples brazos en cualquier parte de su cuerpo. Puede utilizar 
+                    estos brazos adicionales para realizar ataques sorpresivos y defenderse de los enemigos.
+                    La historia de Robin está marcada por un pasado traumático. Fue perseguida por su conocimiento y habilidades, 
+                    lo que la llevó a convertirse en una asesina a una edad temprana. Sin embargo, después de unirse a los Piratas
+                    del Sombrero de Paja, encuentra un lugar donde pertenecer y personas que la aceptan y protegen.
+                    Robin es conocida por su famosa frase "Quiero vivir" ("I want to live"), que se convierte en su lema y símbolo
+                    de su deseo de superar su pasado y encontrar la felicidad. A medida que avanza la historia, Robin desarrolla
+                    fuertes lazos con sus compañeros de tripulación y se convierte en una figura clave en la protección y apoyo 
+                    del equipo.
+                    En resumen, Nico Robin es una arqueóloga talentosa y una luchadora habilidosa con una personalidad tranquila y 
+                    reservada. Su conocimiento sobre la historia antigua y su capacidad para descifrar poneglyphs la hacen invaluable 
+                    en la búsqueda del tesoro "One Piece". Su historia personal y su deseo de encontrar la felicidad y proteger a 
+                    sus amigos la convierten en un personaje central y querido en "One Piece".</p>
+            </article>
+            <article> 
+                <figure class="aviso">
+                    <img src="https://wallpapercave.com/wp/wp1899320.jpg" 
+                         alt="600" width="350"/>
+                </figure>
+                <figcaption class="aviso" style="color:white">Franky Cybor</figcaption> 
+                <p class="aviso">Franky, cuyo nombre real es Cutty Flam, es un personaje del manga y anime "One Piece" creado por 
+                    Eiichiro Oda. Es un carpintero y ciborg, y se convierte en un miembro clave de los Piratas del Sombrero de 
+                    Paja.
+                    Franky es conocido por su apariencia única y su estilo extravagante. Tiene una estatura alta y robusta, con 
+                    el cuerpo cubierto de tatuajes y una cabeza rapada con una gran cicatriz en forma de X en el centro. Viste 
+                    una chaqueta de cuero abierta, pantalones ajustados y lleva consigo una cadena de ancla.
+                    Franky es un carpintero talentoso y un ingeniero hábil. Tiene la capacidad de construir y reparar prácticamente
+                    cualquier cosa, desde barcos hasta dispositivos mecánicos complejos. Es conocido por su habilidad para modificar
+                    su propio cuerpo y convertirse en un ciborg, reemplazando partes de su cuerpo con prótesis mecánicas.
+                    Además de sus habilidades técnicas, Franky es un luchador formidable. Puede usar su cuerpo ciborg para realizar
+                    poderosos ataques físicos, como golpes con su puño mecánico o disparos con su pecho lanzacohetes. Su resistencia
+                    física también es notable, lo que le permite resistir ataques poderosos.
+                    Franky tiene una personalidad extravagante y enérgica. Es extrovertido y tiene una risa distintiva y ruidosa.
+                    A menudo muestra una actitud confiada y audaz, aunque en el fondo también es un individuo sensible y protector
+                    hacia sus amigos. Su lealtad hacia los Piratas del Sombrero de Paja es inquebrantable y está dispuesto a
+                    arriesgar su vida por ellos.
+                    A lo largo de la serie, Franky se enfrenta a su pasado y a la búsqueda de su verdadera identidad. Aunque tuvo 
+                    un pasado turbulento y estuvo involucrado en actividades ilegales, encuentra redención y un nuevo propósito en
+                    su vida al unirse a los Piratas del Sombrero de Paja. Se convierte en una figura paterna y protectora para los
+                    más jóvenes de la tripulación.
+                    En resumen, Franky es un carpintero talentoso, ingeniero y luchador ciborg con una personalidad extravagante y
+                    enérgica. Su capacidad para modificar su propio cuerpo y su valentía en el combate lo convierten en un miembro
+                    esencial de los Piratas del Sombrero de Paja. Su historia personal y su dedicación a sus amigos lo han 
+                    convertido en un personaje querido y memorable en "One Piece".</p>
+            </article>
+            <article> 
+                <figure class="aviso">
+                    <img src="https://wallpapercave.com/wp/wp9075972.jpg" 
+                         alt="600" width="350"/>
+                </figure>
+                <figcaption class="aviso" style="color:white">Brook</figcaption> 
+                <p class="aviso">Brook es un personaje del manga y anime "One Piece" creado por Eiichiro Oda. Es un esqueleto
+                    viviente y un músico talentoso que se convierte en un miembro de los Piratas del Sombrero de Paja.
+                    Brook es conocido por su apariencia distintiva y su estilo elegante. Es un esqueleto humanoide con una gran 
+                    sonrisa y una melena afro de color azul. Viste un traje formal de estilo victoriano con una capa larga y lleva 
+                    consigo un bastón con forma de espada.
+                    Una de las características más notables de Brook es su habilidad musical. Es un hábil músico y toca el violín
+                    con maestría. Su música es capaz de influir en las emociones de aquellos que la escuchan, ya sea para levantar
+                    el ánimo o evocar sentimientos nostálgicos.
+                    Brook también posee habilidades sobrenaturales debido a su naturaleza de esqueleto viviente. Puede separar su
+                    cabeza de su cuerpo y utilizarla para explorar o espiar a distancia. Además, puede moverse rápidamente y tiene
+                    una gran agilidad, lo que le permite realizar ataques sorpresivos en combate.
+                    El pasado de Brook es trágico y está marcado por la pérdida. Hace muchos años, su tripulación original fue 
+                    diezmada y él quedó como el único sobreviviente. Sin embargo, debido a una Fruta del Diablo llamada 
+                    "Yomi Yomi no Mi", Brook pudo regresar a la vida como un esqueleto. Después de años en soledad, se une a los 
+                    Piratas del Sombrero de Paja en busca de una nueva aventura y compañía.
+                    Brook es conocido por su personalidad alegre y humorística. Es un experto en hacer chistes y es famoso por su 
+                    risa característica "Yohoho". A pesar de su apariencia aterradora como esqueleto, es un personaje amigable y 
+                    leal a sus compañeros de tripulación.
+                    En resumen, Brook es un esqueleto viviente y talentoso músico con una apariencia elegante y una personalidad 
+                    alegre. Su habilidad musical y sus habilidades sobrenaturales lo convierten en un miembro único y valioso de 
+                    los Piratas del Sombrero de Paja. Su historia de pérdida y su búsqueda de una nueva aventura le dan profundidad
+                    a su personaje en el mundo de "One Piece".</p>
+            </article>
+            <article> 
+                <figure class="aviso">
+                    <img src="https://i.ytimg.com/vi/3yqZQkfgj_8/maxresdefault.jpg" 
+                         alt="600" width="350"/>
+                </figure>
+                <figcaption class="aviso" style="color:white">Jimbel Caballero del mar</figcaption> 
+                <p class="aviso">Jinbei, cuyo nombre completo es Jinbei, es un personaje del manga y anime "One Piece" creado por 
+                    Eiichiro Oda. Es un poderoso luchador y exmiembro de los Siete Guerreros del Mar, además de convertirse en un 
+                    valioso aliado de los Piratas del Sombrero de Paja.
+                    Jinbei es conocido por su apariencia imponente y su físico robusto. Es un hombre alto y musculoso, con una 
+                    tez oscura y ojos pequeños. Tiene una cabeza afeitada y una gran cicatriz en forma de cruz en su torso. Viste 
+                    un atuendo tradicional de artes marciales, que consiste en una túnica sin mangas y pantalones holgados.
+                    Jinbei es un maestro de las artes marciales de Fishman Karate y tiene un dominio impresionante de las habilidades
+                    acuáticas. Como miembro de la raza Fishman, tiene la capacidad de respirar y luchar debajo del agua con gran 
+                    facilidad. Además, su fuerza física y resistencia son extraordinarias, lo que le permite enfrentarse a enemigos 
+                    poderosos.
+                    Jinbei es conocido por su sabiduría y su naturaleza tranquila. Es un hombre honorable y leal, dispuesto a hacer
+                    sacrificios por el bienestar de los demás. A lo largo de la historia, se ha destacado por su sentido de la 
+                    justicia y su deseo de promover la armonía entre los diferentes grupos étnicos en el mundo de "One Piece".
+                    Jinbei tiene una conexión especial con los Piratas del Sombrero de Paja. Se unió a ellos después de renunciar
+                    a su posición como miembro de los Siete Guerreros del Mar y ha demostrado ser un aliado invaluable. Su 
+                    experiencia y liderazgo han sido vitales en situaciones de peligro y ha demostrado ser un amigo leal y protector
+                    hacia los demás miembros de la tripulación.
+                    En resumen, Jinbei es un poderoso luchador y exmiembro de los Siete Guerreros del Mar en el manga y anime 
+                    "One Piece". Su dominio del Fishman Karate y sus habilidades acuáticas, junto con su sabiduría y sentido de 
+                    la justicia, lo convierten en un personaje respetado y valioso en la serie. Su unión con los Piratas del 
+                    Sombrero de Paja ha fortalecido su papel como aliado y compañero de confianza.</p>
+            </article>
+            <hr>
+        </section>
+        <footer>
+            <p>Derechos Reservados &COPY; 2023</p>
+        </footer>
     </body>
 </html>

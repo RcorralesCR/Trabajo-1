@@ -8,6 +8,7 @@ Estilos de formatos
 
 body{
 
+    
     font-family: sans-serif;
     padding: 80px 20px 0;
 
@@ -16,7 +17,7 @@ body{
 .header{
 
     position: fixed;
-    background-color: #076AF0;
+    background-color:#000099;/*#076AF0;*/
 
     top: 0;
     height: 80px;
@@ -41,28 +42,35 @@ body{
 .logo{
     font-size: 30px;
     font-weight: bold;
-    padding: 0 40px;
+    padding: 0 40PX;
     line-height: 80px;
+    margin-right: 18px;
+}
+.logo-img{
+    margin-right: 0;
+    line-height: 80px;
+
 }
 .nav-menu{
 
     display: flex;
     margin-right: 40px;
     list-style: none;
+    line-height: 80px;
 }
 
 .nave-menu-item{
-    
+
     font-size: 18px;
-    margin: 0 10px;
+    margin: 0 40px;
     line-height: 80px;
 }
 .nave-menu-link{
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 10px 14px;
+    border-radius: 8px;
 }
 .nave-menu-link:hover{
-    
+
     background-color: #024070;
     transition: 0.5s;
 }

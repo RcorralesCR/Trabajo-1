@@ -1,19 +1,114 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>One Piece - Ubicaciones</title>
+        <title style="color:white">Arcos</title>
+        <meta charset="UTF-8">
+        <link href="css/carrusel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>Ubicaciones de One Piece</h1>
-        <ul>
-            <li>Marineford</li>
-            <li>Skypiea</li>
-            <li>Water 7</li>
-            <li>Enies Lobby</li>
-            <li>Impel Down</li>
-            <li>Punk Hazard</li>
-            <li>Whole Cake Island</li>
-            <li>Wano</li>
-        </ul>
+        <header class="header">
+            <nav class="nav">
+                <figure>
+                    <img src="https://i.pinimg.com/originals/bf/c6/8b/bfc68b8ac88ba34eac665bdbf1d56207.jpg" 
+                         alt="50" width="80" class="logo-img"/>
+                </figure>
+                <a href="index.html" class="logo nav-link">One Piece</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Uno.html">Personajes</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Dos.html">Creador</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Tres.html">Arcos</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Cinco.html">Industrias</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Cuatro.html">Referencia</a></li>
+                </ul>
+            </nav>
+        </header>>
+
+        <aside> <!-- Barra lateral -no visual- solo info -->
+            <div>
+                <h1 style="text-align: center;background-color: black;color: white">Sitios de interes</h1>
+
+                <label style="color: white" for="sitios-web">Sitios webs para ver One Piece:</label>
+                <select id="sitios-web" onchange="redirectToPage()">
+                    <option value="">Más opciones</option>
+                    <option value="https://jkanime.net/one-piece/">JKAnime</option>
+                    <option value="https://www3.animeflv.net/anime/one-piece-tv">AnimeFlv</option>
+                    <option value="https://www.crunchyroll.com/es/series/GRMG8ZQZR/one-piece">Crunchyroll</option>
+                </select>
+
+                <script>
+                    function redirectToPage() {
+                        var selectElement = document.getElementById("sitios-web");
+                        var selectedOption = selectElement.options[selectElement.selectedIndex];
+                        var url = selectedOption.value;
+
+                        if (url) {
+                            window.location.href = url;
+                        }
+                    }
+                </script>
+                <article>
+                    <figure>
+                        <img src="https://4.bp.blogspot.com/-D0q9ovuGAK0/V6TVrAvAehI/AAAAAAAAAkU/im08Vf7E56AVVw8fSFbPGA0MFBn_ga9tQCLcB/s1600/imagenes-de-one-piece-3.jpg" 
+                             alt="600" width="350"/>
+                    </figure>
+                </article>
+
+            </div>
+        </aside>
+        <section>
+            <hr>
+            <h2 style="color: white; margin-top: 10px; text-align: center; font-size: 50px;">Arcos</h2>
+            <article class="aviso">
+                <h2 style="color:white">Arco de Alabasta:</h2>
+                <p class="aviso"> Este Arco se desarrolla en la isla de Alabasta y sigue a los Piratas del 
+                    Sombrero de Paja mientras se involucran en una conspiración política y una guerra civil. El objetivo principal
+                    del Arco es detener a Baroque Works y su líder, Crocodile.
+
+            </article>
+            <article class="aviso">  
+                <h2 style="color:white">Arco de Enies Lobby:</h2>
+                <p class="aviso">Arco de Enies Lobby: Es uno de los Arcos más importantes de la serie. Los Piratas del Sombrero de Paja luchan contra la 
+                    organización del Gobierno Mundial, la CP9, para rescatar a su compañero, Nico Robin. La batalla final en Enies Lobby es épica 
+                    y tiene implicaciones significativas para la historia.</p>
+            </article>
+            <article class="aviso"> 
+                <h2 style="color:white">Arco de Marineford:</h2>
+                <p class="aviso"> Este Arco es un punto de inflexión en la historia de One Piece. Presenta una gran guerra entre los Piratas 
+                    del Sombrero de Paja y sus aliados contra la Marina y los Yonkou (los Cuatro Emperadores). Es un Arco lleno de acción, emociones 
+                    intensas y revelaciones impactantes.</p>
+            </article>
+            <article class="aviso">
+                <h2 style="color:white">Arco de Dressrosa: </h2>                 
+                <p class="aviso"> En este Arco, los Piratas del Sombrero de Paja llegan a la isla de Dressrosa, gobernada por el Shichibukai, 
+                    Donquixote Doflamingo. El Arco se centra en la lucha para derrocar a Doflamingo y revela importantes secretos sobre el pasado de 
+                    varios personajes.</p>
+            </article>
+            <article class="aviso">
+                <h2 style="color:white">El Arco de Wano: </h2>                
+                <p class="aviso">Es uno de los Arcos más recientes en la serie de One Piece y está ambientado en el país de Wano, una tierra 
+                    inspirada en el antiguo Japón feudal. Este Arco es muy extenso y ha sido altamente aclamado tanto por los fans como por la crítica
+                    debido a su historia profunda, personajes memorables y emocionantes momentos de acción.
+                    En el Arco de Wano, los Piratas del Sombrero de Paja, junto con varios aliados, llegan a la misteriosa y 
+                    aislada nación de Wano con el objetivo de liberarla de la opresión del emperador Kaido y el shogunato liderado
+                    por Orochi. El país de Wano está sumido en la tiranía y la pobreza, y sus habitantes anhelan la libertad y un 
+                    cambio en su gobierno corrupto.
+                    A medida que avanzan en su misión, Luffy y sus compañeros se encuentran con diversos personajes clave, como 
+                    los samuráis leales a la familia Kozuki, el líder de la revolución contra Kaido conocido como el Samurai Oscuro
+                    (Oden), y otros Piratas Supernovas. Juntos, forman una alianza para desafiar el poder establecido y llevar la 
+                    justicia y la libertad a Wano.
+                    El Arco de Wano se caracteriza por su intrincada trama política, las batallas épicas entre poderosos guerreros
+                    y la exploración de los mitos y la historia antigua de Wano. Además, se revelan numerosos secretos y conexiones
+                    con el pasado de varios personajes importantes, lo que agrega capas de profundidad a la historia general de 
+                    One Piece.
+                    Con su enfoque en la cultura japonesa, el honor, la lealtad y la lucha por la libertad, el Arco de Wano ha 
+                    capturado la atención de los fanáticos y ha demostrado ser un hito significativo en la serie One Piece.</p>
+            </article>
+            <hr>
+        </section>
+        <footer>
+            <p>Derechos Reservados &COPY; 2023</p>
+        </footer>
     </body>
 </html>

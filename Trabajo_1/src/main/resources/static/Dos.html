@@ -1,19 +1,106 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>One Piece - Episodios</title>
+        <title style="color:white">Creador</title>
+        <meta charset="UTF-8">
+        <link href="css/carrusel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>Episodios de One Piece</h1>
-        <ol>
-            <li>Episodio 1</li>
-            <li>Episodio 2</li>
-            <li>Episodio 3</li>
-            <li>Episodio 4</li>
-            <li>Episodio 5</li>
-            <li>Episodio 6</li>
-            <li>Episodio 7</li>
-            <li>Episodio 8</li>
-        </ol>
+        <header class="header">
+            <nav class="nav">
+                <figure>
+                    <img src="https://i.pinimg.com/originals/bf/c6/8b/bfc68b8ac88ba34eac665bdbf1d56207.jpg" 
+                         alt="50" width="80" class="logo-img"/>
+                </figure>
+                <a href="index.html" class="logo nav-link">One Piece</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Uno.html">Personajes</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Dos.html">Creador</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Tres.html">Arcos</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Cinco.html">Industrias</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Cuatro.html">Referencia</a></li>
+                </ul>
+            </nav>
+        </header>>
+
+        <aside> <!-- Barra lateral -no visual- solo info -->
+            <div>
+                <h1 style="text-align: center;background-color: black;color: white">Sitios de interes</h1>
+
+                <label style="color: white" for="sitios-web">Sitios webs para ver One Piece:</label>
+                <select id="sitios-web" onchange="redirectToPage()">
+                    <option value="">Más opciones</option>
+                    <option value="https://jkanime.net/one-piece/">JKAnime</option>
+                    <option value="https://www3.animeflv.net/anime/one-piece-tv">AnimeFlv</option>
+                    <option value="https://www.crunchyroll.com/es/series/GRMG8ZQZR/one-piece">Crunchyroll</option>
+                </select>
+
+                <script>
+                    function redirectToPage() {
+                        var selectElement = document.getElementById("sitios-web");
+                        var selectedOption = selectElement.options[selectElement.selectedIndex];
+                        var url = selectedOption.value;
+
+                        if (url) {
+                            window.location.href = url;
+                        }
+                    }
+                </script>
+                <article>
+                    <figure>
+                        <img src="https://4.bp.blogspot.com/-D0q9ovuGAK0/V6TVrAvAehI/AAAAAAAAAkU/im08Vf7E56AVVw8fSFbPGA0MFBn_ga9tQCLcB/s1600/imagenes-de-one-piece-3.jpg" 
+                             alt="600" width="350"/>
+                    </figure>
+                </article>
+
+            </div>
+        </aside>
+        <section>
+            <hr>
+            <h2 style="color: white; margin-top: 10px; text-align: center; font-size: 50px;">Creador</h2>
+            <article class="aviso">
+                <figure>
+                    <img src="https://i0.wp.com/thenewsfetcher.com/wp-content/uploads/2020/09/Eiichiro-Oda-Great-Manga-Artists-696x391.jpeg" 
+                         alt="600" width="350"/>
+                </figure>
+                
+
+                <h2 style="color:white">Eiichiro Oda:</h2>
+                <p class="aviso"> Aquí tienes información sobre Eiichiro Oda, el autor y creador de One Piece:
+
+                <p class="aviso">Nombre completo: Eiichiro Oda</p>
+                <p class="aviso">Fecha de nacimiento: 1 de enero de 1975</p>
+                <p class="aviso">Nacionalidad: Japonés</p>
+                <p class="aviso">Profesión: Mangaka (dibujante de manga) y escritor</p>
+
+                    Eiichiro Oda es reconocido mundialmente como el autor y dibujante de One Piece, uno de los mangas más populares
+                    y exitosos de todos los tiempos. Oda nació el 1 de enero de 1975 en Kumamoto, Japón.
+                    Desde una edad temprana, Oda mostró un gran interés y talento por el dibujo. Durante su infancia, solía enviar
+                    dibujos a revistas de manga y recibió reconocimiento por su habilidad artística. Después de graduarse de la 
+                    escuela secundaria, decidió perseguir su sueño de convertirse en mangaka.
+                    Oda hizo su debut profesional en 1997 con su manga "Wanted!", una colección de historias cortas. Sin embargo,
+                    su gran éxito llegó ese mismo año cuando comenzó a publicar One Piece en la revista Weekly Shonen Jump de 
+                    Shueisha. Desde entonces, One Piece se ha convertido en una de las franquicias de medios más exitosas, con un 
+                    manga en curso, un exitoso anime, películas, videojuegos y una gran base de fanáticos en todo el mundo.
+
+                    El estilo de dibujo distintivo de Oda, lleno de personajes extravagantes, emociones exageradas y detalles 
+                    minuciosos, ha sido elogiado por su originalidad y creatividad. Su narrativa épica, llena de acción, aventuras 
+                    y un mundo rico en imaginación, ha cautivado a millones de lectores y espectadores.
+
+                    Eiichiro Oda ha sido reconocido con numerosos premios y honores a lo largo de su carrera, incluido el premio 
+                    Tezuka Osamu Cultural Prize y el Guinness World Record por "El cómic más publicado por un solo autor". Además 
+                    de su trabajo en One Piece, Oda ha participado en proyectos de caridad y ha apoyado diversas causas.Como mangaka,
+                    Eiichiro Oda ha dejado una huella duradera en la industria del manga y ha inspirado a una generación de artistas
+                    y narradores. Su dedicación a su obra y su habilidad para construir un mundo convincente y personajes entrañables
+                    han convertido a One Piece en un fenómeno cultural que continuará siendo recordado en la historia del manga.</p>
+
+            </article>
+            <hr>
+        </section>
+        <footer>
+            <p>Derechos Reservados &COPY; 2023</p>
+        </footer>
     </body>
 </html>

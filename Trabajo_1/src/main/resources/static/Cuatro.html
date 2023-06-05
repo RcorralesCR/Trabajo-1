@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>One Piece - Detalles del personaje</title>
+        <title style="color:white">Arcos</title>
+        <meta charset="UTF-8">
+        <link href="css/carrusel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>Detalles del personaje</h1>
-        <h2>Luffy</h2>
-        <p>Luffy es el capitán de los Piratas del Sombrero de Paja y el protagonista principal de One Piece.</p>
+        <header class="header">
+            <nav class="nav">
+                <figure>
+                    <img src="https://i.pinimg.com/originals/bf/c6/8b/bfc68b8ac88ba34eac665bdbf1d56207.jpg" 
+                         alt="50" width="80" class="logo-img"/>
+                </figure>
+                <a href="index.html" class="logo nav-link">One Piece</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Uno.html">Personajes</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Dos.html">Creador</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Tres.html">Arcos</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Cinco.html">Industrias</a></li>
+                    <li class="nav-menu-item"><a class="nav-link nav-menu" href="Cuatro.html">Referencia</a></li>
+                </ul>
+            </nav>
+        </header>>
+
+        <aside> <!-- Barra lateral -no visual- solo info -->
+            <div>
+                <h1 style="text-align: center;background-color: black;color: white">Sitios de interes</h1>
+
+                <label style="color: white" for="sitios-web">Sitios webs para ver One Piece:</label>
+                <select id="sitios-web" onchange="redirectToPage()">
+                    <option value="">Más opciones</option>
+                    <option value="https://jkanime.net/one-piece/">JKAnime</option>
+                    <option value="https://www3.animeflv.net/anime/one-piece-tv">AnimeFlv</option>
+                    <option value="https://www.crunchyroll.com/es/series/GRMG8ZQZR/one-piece">Crunchyroll</option>
+                </select>
+
+                <script>
+                    function redirectToPage() {
+                        var selectElement = document.getElementById("sitios-web");
+                        var selectedOption = selectElement.options[selectElement.selectedIndex];
+                        var url = selectedOption.value;
+
+                        if (url) {
+                            window.location.href = url;
+                        }
+                    }
+                </script>
+                <article>
+                    <figure>
+                        <img src="https://4.bp.blogspot.com/-D0q9ovuGAK0/V6TVrAvAehI/AAAAAAAAAkU/im08Vf7E56AVVw8fSFbPGA0MFBn_ga9tQCLcB/s1600/imagenes-de-one-piece-3.jpg" 
+                             alt="600" width="350"/>
+                    </figure>
+                </article>
+
+            </div>
+        </aside>
+        <section>
+            <hr>
+            <h2 style="color: white; margin-top: 10px; text-align: center">Referencia</h2>
+            <article>
+                <figure>
+                    <iframe width="1000" 
+                            height="600"
+                            src="https://onepiece.fandom.com/es/wiki/One_Piece_Wiki">
+
+                    </iframe>
+                </figure>
+            </article>
+
+            <hr>
+        </section>
+        <footer>
+            <p>Derechos Reservados &COPY; 2023</p>
+        </footer>
     </body>
 </html>
